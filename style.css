@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    max-height: 100vh; /* Ensures the container stays within the viewport */
+    overflow-y: auto; /* Allows scrolling within the container if content overflows */
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444444;
+}
+
+/* Paragraph to type styling */
+#text-to-type {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Textarea styling */
+#input-area {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;
+    transition: border-color 0.3s;
+}
+
+#input-area:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.2);
+}
+
+/* Button styling */
+#restart-btn {
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Results section styling */
+.results {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.results p {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.results span {
+    font-weight: 700;
+    color: #007bff;
+}
